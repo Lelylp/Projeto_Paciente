@@ -55,7 +55,6 @@ while (loop) {
       break;
     case 5:
       remover(listaPacientes);
-      console.log("paciente excluído com sucesso!");
       readline.keyInPause();
       break;
     case 0:
@@ -331,6 +330,7 @@ function remover(listaPacientes) {
     if (a.cpf === cpfBusca) {
       console.log(`Excluido paciente ${a.nome} do sistema..."`);
       listaPacientes.splice(a, 1);
+      console.log("paciente excluído com sucesso!");
       return;
     }
   }
