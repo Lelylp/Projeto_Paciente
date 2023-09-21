@@ -331,8 +331,8 @@ function remover(listaPacientes) {
     if (a.cpf === cpfBusca) {
       console.log(`Excluido paciente ${a.nome} do sistema..."`);
       listaPacientes.splice(a, 1);
-    } else {
-      console.log("Esse paciente nao existe");
+      return;
     }
   }
+  console.log("Esse paciente nao existe");
 }
