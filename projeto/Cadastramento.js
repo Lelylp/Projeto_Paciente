@@ -114,7 +114,7 @@ function cadastrar(listaPacientes) {
 
   do {
     try {
-      cpf = readline.question("Digite o cpf:");
+      cpf = readline.questionInt("Digite o cpf:");
       if (isNaN(Number(cpf))) {
         throw 'Letras não são permitidos'
       }
